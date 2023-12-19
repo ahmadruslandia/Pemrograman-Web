@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Detail Profil</title>
+  </head>
+
+  <body>
+    <form action="beranda.html" method="post" onsubmit="return validate();">
+        <h2 align="center">Lengkapi Profil</h2>
+      <p align="center"><img src="../asset/user_blank.png" width="9%"></p>
+    <table align="center">
+        <tbody>
+        <!-- Nama dan Foto Profil -->
+        <tr>
+          <td><label><br></label></td>
+          <td><input type="file" size="80"></td>
+        </tr>
+        <tr>
+          <td><label><br></label></td>
+        </tr>   
+              <tr>
+                  <td><label>Nama *</label></td>
+                  <td><input type="text" placeholder="Masukan Nama Lengkap" id="nama"></td>
+              </tr>
+              
+        <!-- Telefon -->
+        <tr>
+          <td><label><br></label></td>
+        </tr>   
+        <tr>
+            <td><label>Handphone *</label></td>
+            <td><input type="tel" placeholder="Masukan Nomor HP" id="telfon"></td>
+        </tr>
+
+                <!-- Tanggal Lahir -->
+                <tr>
+                  <td><label><br></label></td>
+                </tr>   
+                  <tr>
+                    <td><label>Tanggal Lahir</label></td>
+                    <td><input type="date" id="date"></td>
+                  </tr>
+                  <tr>
+                    <td><label><br></label></td>
+                  </tr>   
+
+                  <!-- Jenis kelamin -->
+                  <tr>
+                    <td><label>Jenis Kelamin</label></td>
+                    <td><label><input type="radio" name="gender" id="gender">Laki-laki</label>
+                        <label><input type="radio" name="gender" id="gender">Perempuan</label></td>
+                  </tr>
+                  <tr>
+                    <td><label><br></label></td>
+                  </tr>   
+
+        <!-- Alamat -->
+        <tr>
+          <td><label>Alamat</label></td>
+          <td><textarea rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+          <td><label><br></label></td>
+        </tr>   
+
+      <!-- form-Akhir -->
+                <tr>
+                    <td><a href="beranda.html"><button>Simpan</button></a>
+                    <button type="reset">Reset</button></td>
+                </tr>
+
+        </tbody>
+    </table>
+    </form>
+
+    <script>
+      function validate() {
+          var input_text = document.getElementById("nama");
+          if (input_text.value == ""){
+              alert("Nama Anda Belum Terdaftar");
+              return false;
+          }
+          alert("Data Anda Telah Tersimpan");
+          return true;
+      }
+  </script>
+
+  </body>
+</html>

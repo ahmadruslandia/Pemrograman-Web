@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Pendaftaran</title>
+  </head>
+
+  <body>
+    <form action="view/profil_detail.html" method="post" onsubmit="return validate();">
+    <table align="center">
+        <tbody>
+        <!-- input1 -->
+        <tr>
+            <td><label><br></label></td>
+        </tr>   
+                <tr>
+                    <td><label>input1 *</label></td>
+                    <td><input type="text" name="input1" id="input1" placeholder="Masukan input1"></td>
+                </tr>
+                <tr>
+                    <td><label><br></label></td>
+                </tr>   
+                <tr>
+                    <td><label>input2 *</label></td>
+                    <td><input type="text" name="input1" id="input3" placeholder="Masukan input2"></td>
+                </tr>
+                <tr>
+                    <td><label><br></label></td>
+                </tr>   
+      <!-- form-Akhir -->
+                <tr>
+                    <td><a href="view/profil_detail.html"><button>Daftar</button></a></td>
+                </tr>
+
+        </tbody>
+    </table>
+    </form>
+    
+<script>
+    function validate() {
+        var input_text = document.getElementById("input1");
+        if (input_text.value == ""){
+            alert("Buat input1 Terlebih Dahulu");
+            return false;
+        }
+        var email = document.getElementById("email");
+        var email_value = email.value;
+        if (email.value == ""){
+            alert("Masukkan Email Terlebih Dahulu");
+            return false;
+        }
+        var password = document.getElementById("password");
+        var password_value = password.value;
+        if (password.value == ""){
+            alert("Buat Password Terlebih Dahulu");
+            return false;
+        }
+        var select = document.getElementById('select');
+        if (select.value == "option"){
+            alert("Pilih Jenis Akun Terlebih Dahulu");
+            return false;
+        }
+        var checkbox = document.getElementById("checkbox");
+        if (checkbox.checked == false){
+            alert("Klik Checkbox Untuk Menyimpan Data");
+            document.getElementById("checkbox").focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+  </body>
+</html>

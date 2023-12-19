@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beranda</title>
+  </head>
+
+  <body>
+    <p align="center">
+      <a href="beranda.html"><button>Home</button></a>
+      <a href="profil.html"><button>Profil</button></a>
+    </p>
+
+    <form method="post" onsubmit="return validate();">
+
+    <table align="center">
+        <tbody>
+        <!-- Posting -->
+              <tr>
+                <td><label><br></label></td>
+              </tr>   
+              <tr>
+                <td><label><br></label></td>
+              </tr>   
+              <tr>
+                <td><select id="select" >
+                  <option value="option1">- Publik</option>
+                  <option value="option2">- Teman</option>
+                  <option value="option3">- Hanya Saya</option>
+                  </select></td>
+                  <td><textarea placeholder="Apa yang Anda Pikirkan?" rows="3" cols="30" id="post"></textarea></td>
+              </tr>
+              <tr>
+                <td><label><br></label></td>
+              </tr>   
+
+      <!-- Jangkauan -->
+      <tr>
+        <td><label>Jangkauan</label></td>
+      </tr>   
+      <tr>
+        <td><input type="range" min="10" max="90" step="5" value="0" id="jangkauan" onchange="change();"><span id="range-label">10K</span></td>
+      </tr>
+      <tr>
+        <td><label><br></label></td>
+      </tr>   
+
+ 
+      <!-- form-kirim -->
+                <tr>
+                    <td><button>Kirim</button></a></td>
+                </tr>
+        </tbody>
+    </table>
+    </form>
+
+    <script>
+      function validate() {
+        var input_text = document.getElementById("post");
+        if (input_text.value == ""){
+            alert("Anda Belum Memposting");
+            return false;
+        }
+          alert("Anda Berhasil Memposting, Pastikan anda memposting publik untuk dapat memperluas jangkauan");
+          return true;
+  }
+  
+  </script>
+
+<script>
+  var rangeLabel = document.getElementById("range-label");
+  var jangkauan = document.getElementById("jangkauan");
+
+  function change() {
+  rangeLabel.innerText = jangkauan.value + "K";
+  }
+</script>
+
+  </body>
+</html>

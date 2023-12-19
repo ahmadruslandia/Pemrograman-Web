@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table cellpadding="4">
+        <caption style="text-align: center; background-color: red; color: white;">Pendaftaran KTP</caption>
+        <tr>
+            <td>Nomor Pendaftaran</td>
+            <td>
+                <input type="text" style="width: 50px;">
+                <input type="text" style="width: 50px;">
+                <input type="text" style="width: 50px;">
+                <input type="text" style="width: 50px;">
+                <input type="text" style="width: 50px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Nama</td>
+            <td>
+                <input type="text" value="Nama Lengkap">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Alamat</td>
+            <td>
+                <textarea cols="20" rows="3">Alamat Lengkap</textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Provinsi</td>
+            <td>
+                <select name="" id="">
+                    <option value="">Sulawesi Selatan</option>
+                    <option value="">Sulawesi Tenggara</option>
+                    <option value="">Sulawesi Utara</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Kota</td>
+            <td>
+                <input type="text" value="Kota">
+                <label for="">Kec.</label>
+                <input type="text" value="Kecamatan">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pekerjaan</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+                <input type="radio" name="Jenis Kelamin"><label for="Pria">Pria</label>
+                <input type="radio" name="Jenis Kelamin"><label for="Wanita">Wanita</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tempat/ Tanggal Lahir</td>
+            <td>
+                <input type="text" value="Tempat Lahir">
+                <input type="date">
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Kelengkapan Berkas</td>
+            <td>
+                <input type="checkbox"><label for="">FC. KK</label>
+                <input type="checkbox"><label for="">Surat Pengantar</label>
+                                
+            </td>
+        </tr>
+                
+        <tr>
+            <td>
+                <input type="checkbox"><label for="">Pas Foto</label>
+                <input type="checkbox"><label for="">Surat Domisili</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>File Scan</td>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Pengajuan</button>
+                <button type="reset">Batal</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

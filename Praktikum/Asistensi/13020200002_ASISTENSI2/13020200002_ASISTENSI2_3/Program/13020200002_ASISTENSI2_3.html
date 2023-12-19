@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="idsummer" style="text-align: center;">
+        <label for="select1">Pilih Tema</label>
+        <select onchange="changeBgColor();" id="select-idsummer" name="select1">
+            <option id="idsummer-option1" value="gray">Winter</option>
+            <option id="idsummer-option2" value="blue">Summer</option>
+            <option id="idsummer-option3" value="green">Spring</option>
+            <option id="idsummer-option4" value="orange">Fall</option>
+        </select>
+    </div>
+    <div style="text-align: center;">
+        <p><br></p>
+        <canvas id="bg" style="margin: auto; width: 60%; padding: 10px;"></canvas>
+    </div>
+   
+    
+    <script>
+        var changeBgColor = function () {
+
+            var idimgbg = document.getElementById("bg");
+            if (document.getElementById("select-idsummer").value === "gray") {
+                idimgbg.style.backgroundImage = "url('season/winter.jpg')";
+                idimgbg.style.backgroundSize= "100%";
+            }
+            else if (document.getElementById("select-idsummer").value === "blue") {
+                idimgbg.style.backgroundImage = "url('season/summer.jpg')";
+                idimgbg.style.backgroundSize= "100%";
+            } 
+            else if (document.getElementById("select-idsummer").value === "green") {
+                idimgbg.style.backgroundImage = "url('season/spring.jpg')";
+                idimgbg.style.backgroundSize= "100%";
+            } 
+            else if (document.getElementById("select-idsummer").value === "orange") {
+                idimgbg.style.backgroundImage = "url('season/fall.jpg')";
+                idimgbg.style.backgroundSize= "100%";
+            }
+            idimgbg.style.backgroundColor = document.getElementById("select-idsummer").value;
+
+        };
+    </script>
+    
+</body>
+</html>

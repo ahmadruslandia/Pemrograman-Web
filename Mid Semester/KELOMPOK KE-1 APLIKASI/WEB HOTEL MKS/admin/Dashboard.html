@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" class="no-focus">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+        <title>Dashboard</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="Ahamad Ruslandia Papua">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Codebase framework -->
+        <link rel="stylesheet" id="css-main" href="../assets/css/codebase.min.css">
+
+        
+    <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+    <body>
+        <!-- Page Container -->
+       
+        <div id="page-container" class="sidebar-o side-scroll main-content-boxed side-trans-enabled page-header-fixed">
+            
+
+            <!-- Sidebar -->
+         
+            <nav id="sidebar">
+                <!-- Sidebar Scroll Container -->
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 649px;"><div id="sidebar-scroll" style="overflow: hidden; width: auto; height: 649px;">
+                    <!-- Sidebar Content -->
+                    <div class="sidebar-content">
+                        <!-- Side Header -->
+                        <div class="content-header content-header-fullrow px-15">
+                            <!-- Mini Mode -->
+                            <div class="content-header-section sidebar-mini-visible-b">
+                                <!-- Logo -->
+                                <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
+                                    <span class="text-dual-primary-dark">c</span><span class="text-primary">b</span>
+                                </span>
+                                <!-- END Logo -->
+                            </div>
+                            <!-- END Mini Mode -->
+
+                            <!-- Normal Mode -->
+                            <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                                <!-- Close Sidebar, Visible only on mobile screens -->
+                                <!-- Layout API, functionality initialized in Codebase() -> uiApiLayout() -->
+                                <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+                                    <i class="fa fa-times text-danger"></i>
+                                </button>
+                                <!-- END Close Sidebar -->
+
+                                <!-- Logo -->
+                                <div class="content-header-item">
+                                    <a class="link-effect font-w700" href="Dashboard.html">
+                                        <i class="text-primary"></i>
+                                        <span class="font-size-xl text-dual-primary-dark">HOTEL MKS</span>
+                                    </a>
+                                </div>
+                                <!-- END Logo -->
+                            </div>
+                            <!-- END Normal Mode -->
+                        </div>
+                        <!-- END Side Header -->
+
+                        <!-- Side User -->
+                        <div class="content-side content-side-full content-side-user px-10 align-parent">
+                            <!-- Visible only in mini mode -->
+                            <div class="sidebar-mini-visible-b align-v animated fadeIn">
+                                <img class="img-avatar img-avatar32" src="../assets/images/user_blank.png" alt="">
+                            </div>
+                            <!-- END Visible only in mini mode -->
+
+                            <!-- Visible only in normal mode -->
+                            <div class="sidebar-mini-hidden-b text-center">
+                                <a class="img-link" href="Dashboard.html">
+                                        <img class="img-avatar" src="../assets/images/ahmadruslandia.jpg" alt="">
+                                </a>
+                                <ul class="list-inline mt-10">
+                                    <li class="list-inline-item">
+                                        <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="Dashboard.html">Ahmad Ruslandia Papua</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Visible only in normal mode -->
+                        </div>
+                        <!-- END Side User -->
+
+                        <!-- Side Navigation -->
+                        <div class="content-side content-side-full">
+                            <ul class="nav-main">
+                                <li>
+                                    <a class="active" href="Dashboard.html"><i class="si si-screen-desktop"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-pin"></i><span class="sidebar-mini-hide">Post</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="NewPost.html">Add New</a>
+                                        </li>
+                                        <li>
+                                            <a href="PostList.html">Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="KatagoriPost.html">Categories</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="ImageSlider.html"><i class="si si-picture"></i><span class="sidebar-mini-hide">Image Slider</span></a>
+                                </li>
+                                <li>
+                                    <a href="RoomList.html"><i class="si si-star"></i><span class="sidebar-mini-hide">Rooms</span></a>
+                                </li>
+                                <li>
+                                    <a href="Facility.html"><i class="si si-badge"></i><span class="sidebar-mini-hide">Facility</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="Dashboard.html"><i class="si si-cup"></i><span class="sidebar-mini-hide">Restaurant</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="Schedule.html">Schedule</a>
+                                        </li>
+                                        <li>
+                                            <a href="Menu.html">Menu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="Events.html"><i class="si si-calendar"></i><span class="sidebar-mini-hide">Events</span></a>
+                                </li>
+                                <li>
+                                    <a href="InfoContact.html"><i class="si si-call-end"></i><span class="sidebar-mini-hide">Info Contact</span></a>
+                                </li>
+                                <li>
+                                    <a href="Inbox.html"><i class="si si-envelope"></i><span class="sidebar-mini-hide">Inbox</span></a>
+                                </li>
+                                <li>
+                                    <a href="Users.html"><i class="si si-user"></i><span class="sidebar-mini-hide">Users</span></a>
+                                </li>
+                                <li>
+                                    <a href="Login.html"><i class="si si-logout mr-5"></i><span class="sidebar-mini-hide">Sign Out</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END Side Navigation -->
+                        
+                    </div>
+                    <!-- Sidebar Content -->
+                </div><div class="slimScrollBar" style="background: rgb(205, 205, 205); width: 4px; position: absolute; top: 0px; opacity: 0.9; display: none; border-radius: 7px; z-index: 99; right: 0px; height: 649px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 1; z-index: 90; right: 0px;"></div></div>
+                <!-- END Sidebar Scroll Container -->
+            </nav>
+            <!-- END Sidebar -->
+
+
+            <!-- Main Container -->
+            <main id="main-container" style="min-height: 591px;">
+                <!-- Page Content -->
+                <div class="content">
+                    <div class="row gutters-tiny js-appear-enabled animated fadeIn" data-toggle="appear">
+                        <!-- Row #1 -->
+                        <div class="col-6 col-xl-3">
+                            <a class="block block-link-shadow text-right" href="javascript:void(0)">
+                                <div class="block-content block-content-full clearfix">
+                                    <div class="float-left mt-10 d-none d-sm-block">
+                                        <i class="si si-pin fa-3x text-body-bg-dark"></i>
+                                    </div>
+                                    <div class="font-size-h3 font-w600">3</div>
+                                    <div class="font-size-sm font-w600 text-uppercase text-muted">Total Post</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-3">
+                            <a class="block block-link-shadow text-right" href="javascript:void(0)">
+                                <div class="block-content block-content-full clearfix">
+                                    <div class="float-left mt-10 d-none d-sm-block">
+                                        <i class="si si-users fa-3x text-body-bg-dark"></i>
+                                    </div>
+                                    <div class="font-size-h3 font-w600">10K</div>
+                                    <div class="font-size-sm font-w600 text-uppercase text-muted">Total Visitors</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-3">
+                            <a class="block block-link-shadow text-right" href="javascript:void(0)">
+                                <div class="block-content block-content-full clearfix">
+                                    <div class="float-left mt-10 d-none d-sm-block">
+                                        <i class="si si-eye fa-3x text-body-bg-dark"></i>
+                                    </div>
+                                    <div class="font-size-h3 font-w600">9K</div>
+                                    <div class="font-size-sm font-w600 text-uppercase text-muted">Page Views</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-3">
+                            <a class="block block-link-shadow text-right" href="javascript:void(0)">
+                                <div class="block-content block-content-full clearfix">
+                                    <div class="float-left mt-10 d-none d-sm-block">
+                                        <i class="si si-user fa-3x text-body-bg-dark"></i>
+                                    </div>
+                                    <div class="font-size-h3 font-w600">2</div>
+                                    <div class="font-size-sm font-w600 text-uppercase text-muted">Users</div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Row #1 -->
+                    </div>
+                    <div class="row gutters-tiny js-appear-enabled animated fadeIn" data-toggle="appear">
+
+                        <!-- Row #2 -->
+                        <div class="col-md-6">
+                            <div class="block">
+                                <div class="block-header">
+                                    <h3 class="block-title">
+                                        Visitors <small>This Month</small>
+                                    </h3>
+                                    <div class="block-options">
+                                        <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
+                                            <i class="si si-refresh"></i>
+                                        </button>
+                                        <button type="button" class="btn-block-option">
+                                            <i class="si si-wrench"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="block-content">
+                                    <div class="pull-all"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                        <canvas class="js-chartjs-dashboard-lines chartjs-render-monitor" width="538" height="269" style="display: block; width: 538px; height: 269px;"></canvas>
+                                    </div>
+                                </div>
+                                
+                                <div class="block-content">
+                                    <div class="row items-push">
+                                        <div class="col-6 col-sm-4 text-center text-sm-left">
+                                            <div class="font-size-sm font-w600 text-uppercase text-muted">This Month</div>
+                                            <div class="font-size-h4 font-w600">2.2K</div>
+                                            
+                                        </div>
+                                        <div class="col-6 col-sm-4 text-center text-sm-left">
+                                            <div class="font-size-sm font-w600 text-uppercase text-muted">Last Month</div>
+                                            <div class="font-size-h4 font-w600">23</div>
+                                            
+                                        </div>
+                                        <div class="col-12 col-sm-4 text-center text-sm-left">
+                                            <div class="font-size-sm font-w600 text-uppercase text-muted">Average per day</div>
+                                            <div class="font-size-h4 font-w600">75.4</div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="block">
+                                <div class="block-header">
+                                    <h3 class="block-title">
+                                        Visitors <small>This Year</small>
+                                    </h3>
+                                    <div class="block-options">
+                                        <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
+                                            <i class="si si-refresh"></i>
+                                        </button>
+                                        <button type="button" class="btn-block-option">
+                                            <i class="si si-wrench"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="pull-all"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                        <!-- Lines Chart Container -->
+                                        <canvas class="js-chartjs-dashboard-lines2 chartjs-render-monitor" width="538" height="269" style="display: block; width: 538px; height: 269px;"></canvas>
+                                    </div>
+                                </div>
+                                <div class="block-content bg-white">
+                                    <div class="row items-push">
+                                        <div class="col-6 col-sm-4 text-center text-sm-left">
+                                            <div class="font-size-sm font-w600 text-uppercase text-muted">This Year</div>
+                                            <div class="font-size-h4 font-w600">6</div>
+                                            
+                                        </div>
+                                        <div class="col-6 col-sm-4 text-center text-sm-left">
+                                            <div class="font-size-sm font-w600 text-uppercase text-muted">Last Year</div>
+                                            <div class="font-size-h4 font-w600">0</div>
+                                            
+                                        </div>
+                                        <div class="col-12 col-sm-4 text-center text-sm-left">
+                                            <div class="font-size-sm font-w600 text-uppercase text-muted">Average per month</div>
+                                            <div class="font-size-h4 font-w600">3</div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Row #2 -->
+                    </div>
+                    <div class="row gutters-tiny js-appear-enabled animated fadeIn" data-toggle="appear">
+                                                <!-- Row #3 -->
+                        <div class="col-md-4">
+                            <div class="block">
+                                <div class="block-content block-content-full">
+                                    <div class="py-20 text-center">
+                                        <div class="mb-20">
+                                            <i class="fa fa-envelope-open fa-4x text-info"></i>
+                                        </div>
+                                        <div class="font-size-h4 font-w600">0 Inbox</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="block">
+                                <div class="block-content block-content-full">
+                                    <div class="py-20 text-center">
+                                        <div class="mb-20">
+                                            <i class="fa fa-building fa-4x text-info"></i>
+                                        </div>
+                                        <div class="font-size-h4 font-w600">4 Rooms</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="block">
+                                <div class="block-content block-content-full">
+                                    <div class="py-20 text-center">
+                                        <div class="mb-20">
+                                            <i class="fa fa-cutlery fa-4x text-info"></i>
+                                        </div>
+                                        <div class="font-size-h4 font-w600">7 Menus</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Row #3 -->
+                    </div>
+                    
+                </div>
+                <!-- END Page Content -->
+            </main> 
+            <!-- END Main Container -->
+            
+            <!-- Footer -->
+            <footer id="page-footer" class="opacity-0" style="opacity: 1;">
+                <div class="content py-20 font-size-xs clearfix">
+                    <div class="float-right">
+                        <p><br></p>
+                    </div>
+                    <div class="float-left">
+                        <p ><br></p>
+                    </div>
+                </div>
+            </footer>
+            <!-- END Footer -->
+        
+        </div>
+        <!-- END Page Container -->
+
+        <!-- Codebase Core JS -->
+        <script src="../assets/js/core/jquery.min.js"></script>
+        <script src="../assets/js/core/popper.min.js"></script>
+        <script src="../assets/js/core/bootstrap.min.js"></script>
+        <script src="../assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="../assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="../assets/js/core/jquery.appear.min.js"></script>
+        <script src="../assets/js/core/jquery.countTo.min.js"></script>
+        <script src="../assets/js/core/js.cookie.min.js"></script>
+        <script src="../assets/js/codebase.jS"></script>
+
+        <!-- Page JS Plugins -->
+        <script src="../assets/js/plugins/chartjs/Chart.bundle.min.js"></script>
+
+        <!-- Page JS Code -->
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+
+                var BePagesDashboard = function() {
+                    // Chart.js Charts, for more examples you can check out http://www.chartjs.org/docs
+                    var initDashboardChartJS = function () {
+                        // Set Global Chart.js configuration
+                        Chart.defaults.global.defaultFontColor              = '#555555';
+                        Chart.defaults.scale.gridLines.color                = "transparent";
+                        Chart.defaults.scale.gridLines.zeroLineColor        = "transparent";
+                        Chart.defaults.scale.display                        = false;
+                        Chart.defaults.scale.ticks.beginAtZero              = true;
+                        Chart.defaults.global.elements.line.borderWidth     = 2;
+                        Chart.defaults.global.elements.point.radius         = 5;
+                        Chart.defaults.global.elements.point.hoverRadius    = 7;
+                        Chart.defaults.global.tooltips.cornerRadius         = 3;
+                        Chart.defaults.global.legend.display                = false;
+
+                        // Chart Containers
+                        var chartDashboardLinesCon  = jQuery('.js-chartjs-dashboard-lines');
+                        var chartDashboardLinesCon2 = jQuery('.js-chartjs-dashboard-lines2');
+
+                        // Chart Variables
+                        var chartDashboardLines, chartDashboardLines2;
+
+                        // Lines Charts Data
+                        var chartDashboardLinesData = {
+                            labels: ["01","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","02","03","04","05","07"],
+                            datasets: [
+                                {
+                                    label: 'This Week',
+                                    fill: true,
+                                    backgroundColor: 'rgba(66,165,245,.25)',
+                                    borderColor: 'rgba(66,165,245,1)',
+                                    pointBackgroundColor: 'rgba(66,165,245,1)',
+                                    pointBorderColor: '#fff',
+                                    pointHoverBackgroundColor: '#fff',
+                                    pointHoverBorderColor: 'rgba(66,165,245,1)',
+                                    data: [1,1,1,1,1,1,1108,514,181,61,27,37,31,35,13,45,25,22,23,5,11,8,15,7,7,1,1,1,1,1]                                }
+                            ]
+                        };
+
+                        var chartDashboardLinesOptions = {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        suggestedMax: 50
+                                    }
+                                }]
+                            },
+                            tooltips: {
+                                callbacks: {
+                                    label: function(tooltipItems, data) {
+                                        return ' ' + tooltipItems.yLabel + ' Visitors';
+                                    }
+                                }
+                            }
+                        };
+
+                        var chartDashboardLinesData2 = {
+                            labels: ["March","April"],
+                            datasets: [
+                                {
+                                    label: 'This Week',
+                                    fill: true,
+                                    backgroundColor: 'rgba(156,204,101,.25)',
+                                    borderColor: 'rgba(156,204,101,1)',
+                                    pointBackgroundColor: 'rgba(156,204,101,1)',
+                                    pointBorderColor: '#fff',
+                                    pointHoverBackgroundColor: '#fff',
+                                    pointHoverBorderColor: 'rgba(156,204,101,1)',
+                                    data: [1,5]                                }
+                            ]
+                        };
+
+                        var chartDashboardLinesOptions2 = {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        suggestedMax: 480
+                                    }
+                                }]
+                            },
+                            tooltips: {
+                                callbacks: {
+                                    label: function(tooltipItems, data) {
+                                        return ' ' + tooltipItems.yLabel + ' Visitors';
+                                    }
+                                }
+                            }
+                        };
+
+                        // Init Charts
+                        if ( chartDashboardLinesCon.length ) {
+                            chartDashboardLines  = new Chart(chartDashboardLinesCon, { type: 'line', data: chartDashboardLinesData, options: chartDashboardLinesOptions });
+                        }
+
+                        if ( chartDashboardLinesCon2.length ) {
+                            chartDashboardLines2 = new Chart(chartDashboardLinesCon2, { type: 'line', data: chartDashboardLinesData2, options: chartDashboardLinesOptions2 });
+                        }
+                    };
+
+                    return {
+                        init: function () {
+                            // Init Chart.js Charts
+                            initDashboardChartJS();
+                        }
+                    };
+                }();
+
+                // Initialize when page loads
+                jQuery(function(){ BePagesDashboard.init(); });
+            });
+        </script>
+    
+</body>
+</html>
